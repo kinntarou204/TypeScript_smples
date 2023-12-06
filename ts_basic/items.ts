@@ -1,5 +1,5 @@
-var itemnames:String[]=["コーヒー","紅茶","ほうじ茶"];
-console.log(itemnames);
+var ItemNames:String[]=["コーヒー","紅茶","ほうじ茶"];
+console.log(ItemNames);
 
 
 var item1={
@@ -24,3 +24,11 @@ console.log(items,typeof items)
 var borderPrice=350;
 var fileteritems=items.filter((item)=>item.price<=borderPrice);
 console.log(fileteritems);
+
+function calculateTotalPrice(price:number,amount:number):number {
+    var TotalPrice=price*amount;
+    return TotalPrice
+}
+var amount=5;
+var Totalprice=calculateTotalPrice(item1.price,amount);
+console.log(Totalprice);
