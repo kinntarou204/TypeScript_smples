@@ -1,0 +1,12 @@
+"use strict";
+var unionData;
+unionData = "Tokyo";
+unionData = 100;
+console.log(unionData, typeof unionData);
+var data;
+data = 10;
+data = "Hello";
+data = true;
+data = undefined;
+data = null;
+console.log(data, typeof data);
