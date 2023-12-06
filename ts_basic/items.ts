@@ -25,10 +25,22 @@ var borderPrice=350;
 var fileteritems=items.filter((item)=>item.price<=borderPrice);
 console.log(fileteritems);
 
-function calculateTotalPrice(price:number,amount:number):number {
-    var TotalPrice=price*amount;
-    return TotalPrice
+//function
+// function calculateTotalPrice(price:number, amount:number): number {
+//    var totalPrice = price * amount; 
+//    return totalPrice;
+// }
+//anonymus function
+// const calculateTotalPrice = function(price:number, amount:number): number {
+//    var totalPrice = price * amount; 
+//    return totalPrice;
+// }
+//anonymus function
+const calculateTotalPrice = (price:number, amount:number): number => {
+    var totalPrice = price * amount; 
+    return totalPrice;
 }
-var amount=5;
-var Totalprice=calculateTotalPrice(item1.price,amount);
-console.log(Totalprice);
+ 
+ var amount = 5;
+ var totalPrice = calculateTotalPrice(item1.price, amount);
+ console.log(totalPrice);
